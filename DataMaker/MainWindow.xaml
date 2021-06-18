@@ -1,0 +1,28 @@
+﻿<Window x:Class="DataMaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataMaker"
+        mc:Ignorable="d"
+        Title="Immoref.fr - DataMaker" Height="283.675" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <ProgressBar x:Name="PG_BAR" Height="20" Margin="10,103,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="483"/>
+        <Button x:Name="BT_GETCODE" Content="Traitement" Margin="0,47,10,0" Click="BT_GETCODE_Click" HorizontalAlignment="Right" Width="151" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="BT_PROCESS" Content="Traitement" Margin="0,103,10,0" VerticalAlignment="Top" Click="BT_PROCESS_Click" HorizontalAlignment="Right" Width="151"/>
+        <ProgressBar x:Name="PG_REGION" Height="20" Margin="10,128,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="483"/>
+        <TextBox x:Name="TB_REGION_FILE" Height="20" HorizontalContentAlignment="Center" Margin="498,128,10,0" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="TB_PROCESS_DATA" Content="Transfert des fichiers CSV en JSON" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="772" FontWeight="Bold"/>
+        <ProgressBar x:Name="PG_CODE_INSEE" HorizontalAlignment="Left" Height="20" Margin="10,47,0,0" VerticalAlignment="Top" Width="483"/>
+        <Label x:Name="LB_GETCODE" Content="Récupération des codes INSEE" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,16,0,195" Width="618" FontWeight="Bold"/>
+        <TextBox x:Name="TB_FILENAME_CODE" TextAlignment="Center" IsReadOnly="True" Height="20" Margin="498,47,166,0" TextWrapping="NoWrap" VerticalAlignment="Top" IsReadOnlyCaretVisible="True" AcceptsReturn="False" />
+        <TextBox x:Name="TB_REGION" Height="20" Margin="498,103,166,0" HorizontalContentAlignment="Center" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="LB_STATS" Content="Création des statistiques" Margin="10,153,10,0" HorizontalContentAlignment="Center" FontWeight="Bold" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="PG_STATS" HorizontalAlignment="Left" Height="20" Margin="10,184,0,0" VerticalAlignment="Top" Width="483"/>
+        <TextBox x:Name="TB_STATS_CHECK" Height="20" Margin="498,184,168,0" HorizontalContentAlignment="Center" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="BT_STATS" Content="Traitement" Margin="0,184,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="153" Click="BT_STATS_Click"/>
+        <ProgressBar x:Name="PG_REGION_STATS" Height="20" Margin="10,209,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="483" Foreground="#FF0672B0"/>
+        <TextBox x:Name="TB_REGION_FILE_STATS" Height="20" HorizontalContentAlignment="Center" Margin="498,209,10,0" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="BT_DEBUG" Content="Arrondissements" Margin="0,22,10,0" Click="BT_DEBUG_Click" HorizontalAlignment="Right" Width="151" Height="20" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
